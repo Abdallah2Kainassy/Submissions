@@ -1,1 +1,11 @@
 /* Add your CSS code below */
+.message__author {
+  background-color: cadetblue;
+}
+#first-message {
+  background-color: red;
+}
+
+.message--latest {
+  background-color: yellow;
+}

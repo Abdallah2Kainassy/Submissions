@@ -8,7 +8,8 @@ a {
   font-size: 0.9rem;
 }
 .message--unread {
-  border-left-color: blue;
+  border-style: solid;
+  border-color: white white white blue;
 }
 .message__time--old {
   opacity: 0.5;

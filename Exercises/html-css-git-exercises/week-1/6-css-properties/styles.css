@@ -3,10 +3,12 @@ a {
   color: red;
   text-decoration: none;
   font-weight: bold;
+}
+.message__time {
   font-size: 0.9rem;
 }
 .message--unread {
-  border-left: blue;
+  border-left-color: blue;
 }
 .message__time--old {
   opacity: 0.5;

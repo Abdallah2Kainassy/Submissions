@@ -1,0 +1,28 @@
+header {
+  margin-left: 550px;
+  font-size: 50px;
+}
+.vertical-menu {
+  width: 600px;
+  text-align: center;
+  position: center;
+  margin-left: 350px;
+  font-size: 20px;
+}
+
+.vertical-menu a {
+  background-color: #eee;
+  color: black;
+  display: block;
+  padding: 12px;
+  text-decoration: none;
+}
+ul {
+  margin: 30px 200px 50px 550px;
+}
+footer {
+  margin-left: 500px;
+}
+footer a {
+  text-decoration: none;
+}

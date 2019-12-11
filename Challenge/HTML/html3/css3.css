@@ -1,0 +1,103 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+.container {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  line-height: 1.4;
+}
+* {
+  background-color: rgb(12, 31, 31);
+  color: white;
+}
+
+nav {
+  padding: 10px;
+
+  background-color: rgb(3, 3, 3);
+}
+img {
+  width: 100%;
+}
+nav a {
+  padding-left: 60px;
+  text-decoration: none;
+  background-color: rgb(3, 3, 3);
+  padding-right: 50px;
+}
+.main {
+  float: left;
+  width: 30%;
+  position: relative;
+}
+.gallery {
+  float: right;
+  width: 60%;
+  position: relative;
+}
+hr {
+  color: white;
+}
+
+.subscription {
+  float: left;
+  width: 50%;
+  position: relative;
+}
+
+.otherServices {
+  float: right;
+  width: 50%;
+  position: relative;
+}
+span {
+  background-color: white;
+  color: black;
+  display: block;
+  width: 100px;
+  height: 30px;
+  text-align: center;
+  padding-top: 10px;
+}
+
+footer {
+  text-align: center;
+  display: block;
+  position: absolute;
+  top: 768px;
+  width: 80%;
+}
+
+input {
+  background-color: blanchedalmond;
+  color: black;
+}
+ul {
+  list-style-type: none;
+}
+.labels {
+  display: block;
+
+  float: left;
+  width: 50%;
+}
+
+.inputs {
+  display: block;
+
+  float: right;
+  width: 50%;
+  margin-right: 346px;
+
+  margin-top: -211px;
+  width: 398px;
+}
+
+button {
+  background-color: whitesmoke;
+  color: black;
+  height: 40px;
+  width: 100px;
+}

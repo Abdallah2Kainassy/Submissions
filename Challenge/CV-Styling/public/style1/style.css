@@ -1,0 +1,79 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: white;
+}
+##wrapper {
+  width: 80%;
+}
+header {
+  background-color: gray;
+  margin-left: 25px;
+  color: #ff0000;
+}
+header h1,
+h2 {
+  padding-left: 150px;
+  padding-top: 5px;
+}
+header h1 {
+  padding-bottom: 50px;
+}
+.content {
+  margin-left: 150px;
+}
+#contact {
+  max-height: 100px;
+  position: absolute;
+  top: 0px;
+  margin-left: 800px;
+  display: block;
+}
+.content {
+  margin-top: 100px;
+}
+#about {
+  width: 50%;
+  height: 400px;
+  float: left;
+}
+#competencies {
+  width: 40%;
+  float: right;
+}
+#experiences {
+  width: 50%;
+  height: 400px;
+}
+#education {
+  width: 40%;
+  float: right;
+  height: 400px;
+}
+#hobbies {
+  position: absolute;
+  top: 1200px;
+}
+.experience-location,
+.experience-date {
+  color: gray;
+}
+.experience-date-separator {
+  color: red;
+}
+.experience-type {
+  color: red;
+}
+.experience-institution {
+  color: red;
+}
+img {
+  position: absolute;
+  max-height: 100px;
+
+  top: 40px;
+  margin-left: 600px;
+  display: block;
+}
+ {
+}

@@ -1,1 +1,77 @@
 /* Add your own CSS code below */
+footer span {
+  color: #c85308;
+}
+.main-nav__list {
+  display: flex;
+}
+.main-nav__list-item {
+  flex-direction: row;
+  justify-content: center;
+
+  margin: 5px 120px;
+  padding: 20px;
+  font-size: 30px;
+}
+.site-search__input {
+  width: 200px;
+}
+
+.main-article {
+  display: flex;
+  flex-direction: column;
+}
+.main-article p {
+  max-width: 50em;
+  line-height: 1.8em;
+  justify-content: space-around;
+  margin: 20px auto;
+}
+.main-article > h1 {
+  margin: 20px 234px;
+}
+
+@media screen and (min-width: 993px) {
+  .hero__title h2 {
+    font-size: 2em;
+  }
+}
+@media screen and (min-width: 768px) {
+  .site-header {
+    display: flex;
+    flex-direction: row;
+  }
+  .main-nav {
+    padding: 0.5rem;
+    margin-left: 231px;
+  }
+  .main-nav__list-item {
+    flex-direction: row;
+
+    justify-content: space-between;
+
+    margin: -2px -8px;
+
+    padding: 20px;
+
+    font-size: 20px;
+  }
+  .site-search {
+    position: relative;
+    margin: 1.5rem;
+    margin-left: 200px;
+  }
+  .views {
+    display: flex;
+  }
+  .view-list__item {
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 0px 10px;
+  }
+  .views__all {
+    flex-direction: row;
+    justify-content: space-around;
+    margin-left: 785px;
+  }
+}

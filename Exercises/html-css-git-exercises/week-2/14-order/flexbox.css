@@ -37,6 +37,7 @@
 
 .countries--third {
   flex-direction: row-reverse;
+  justify-content: flex-end;
 }
 .countries li {
   font-size: 15px;

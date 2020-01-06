@@ -19,8 +19,9 @@
 }
 .countries--third {
   flex-direction: column;
+  justify-content: flex-end;
 }
 .countries--fourth {
   flex-direction: column-reverse;
-  row-gap: 15px;
+  justify-content: space-around;
 }

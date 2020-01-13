@@ -8,6 +8,7 @@ body {
   margin-left: 10%;
   line-height: 1.4;
 }
+
 * {
   background-color: rgb(12, 31, 31);
   color: white;
@@ -27,31 +28,35 @@ nav a {
   background-color: rgb(3, 3, 3);
   padding-right: 50px;
 }
+.mainbody {
+  display: flex;
+  justify-content: space-between;
+}
+
 .main {
-  float: left;
   width: 30%;
-  position: relative;
+  order: 1;
 }
 .gallery {
-  float: right;
   width: 60%;
-  position: relative;
+  order: 2;
 }
 hr {
   color: white;
 }
-
-.subscription {
-  float: left;
+.details {
+  display: flex;
+  justify-content: space-between;
+}
+.Subscription {
   width: 50%;
-  position: relative;
+  order: 1;
+}
+.OtherServices {
+  width: 50%;
+  order: 2;
 }
 
-.otherServices {
-  float: right;
-  width: 50%;
-  position: relative;
-}
 span {
   background-color: white;
   color: black;
@@ -61,13 +66,13 @@ span {
   text-align: center;
   padding-top: 10px;
 }
-
 footer {
   text-align: center;
-  display: block;
-  position: absolute;
-  top: 768px;
-  width: 80%;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
 }
 
 input {
@@ -78,21 +83,11 @@ ul {
   list-style-type: none;
 }
 .labels {
-  display: block;
-
-  float: left;
-  width: 50%;
+  width: 25%;
 }
 
 .inputs {
-  display: block;
-
-  float: right;
-  width: 50%;
-  margin-right: 346px;
-
-  margin-top: -211px;
-  width: 398px;
+  width: 25%;
 }
 
 button {
@@ -100,4 +95,9 @@ button {
   color: black;
   height: 40px;
   width: 100px;
+}
+.main :p {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

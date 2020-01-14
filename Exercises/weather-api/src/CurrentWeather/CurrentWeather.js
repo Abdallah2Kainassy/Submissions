@@ -10,13 +10,14 @@ class CurrentWeather extends Component {
           <img src={storm}></img>
         </div>
         <div className="img-main-status">
-          <span>overcast clouds</span>
+          <span>{this.props.description}</span>
         </div>
         <div className="Temperture">
           <span>Temperture</span> 10 C <span> To</span> 11 C
         </div>
         <div className="last-span">
-          <span>Humidity </span> 70%<span> Pressure </span> 100.48
+          <span>Humidity </span> {this.props.humidity}
+          <span> Pressure </span> {this.props.pressure}
         </div>
       </div>
     );

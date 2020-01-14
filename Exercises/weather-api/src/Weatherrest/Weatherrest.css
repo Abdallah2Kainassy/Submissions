@@ -1,0 +1,16 @@
+.other-status {
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.status {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.status img {
+  width: 60px;
+  margin: 30px;
+}

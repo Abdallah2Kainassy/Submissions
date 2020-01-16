@@ -17,3 +17,57 @@
   flex-direction: column;
   align-items: center;
 }
+.header-container {
+  height: 100px;
+  background-color: #7b88dc;
+  display: flex;
+  justify-content: flex-start;
+}
+.input {
+  align-self: start;
+}
+input {
+  margin: 30px 10px 10px 10px;
+  background-color: #7b88dc;
+  border: none;
+  color: aliceblue;
+}
+.button {
+  align-self: center;
+}
+button {
+  width: 200px;
+  height: 50px;
+  background-color: #6455c9;
+  border: none;
+}
+.img-main-status {
+  margin: 20px;
+  color: white;
+  font-size: 20px;
+}
+.Temperture {
+  font-weight: bold;
+  padding: 20px;
+}
+
+.img-main {
+  width: 300px;
+  height: 300px;
+}
+.other-status {
+  margin: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.status {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.status img {
+  width: 60px;
+  margin: 30px;
+}

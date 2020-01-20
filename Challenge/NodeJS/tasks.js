@@ -75,7 +75,11 @@ function quit() {
   process.exit();
 }
 /**
+ *
+ *
+ *
  * help the application
+ * that shows list of options
  *
  * @returns {void}
  */

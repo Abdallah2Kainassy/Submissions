@@ -40,4 +40,18 @@ WHERE Name like 'Layal';
 
 
 
+Joins
+------------------------------------------------------------------
+1.
+select employees.Name,employees.Company,companies.Date from employees INNER Join companies on employees.Company = companies.Name
+
+------------------------------------------------------------------
+2.
+select employees.Name from employees INNER Join companies on employees.Company = companies.Name 
+where companies.Date <2000
+--------------------------------------------------------------------
+3.
+select employees.Company from employees INNER Join companies on employees.Company = companies.Name 
+where Role='Graphic Designer'
+----------------------------------------------------------------------
 

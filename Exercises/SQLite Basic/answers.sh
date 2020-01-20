@@ -11,5 +11,33 @@ WHERE ID=2;
 SET Points=150
 WHERE ID=1;
 
+------------------------------------------------------------------
+create table graduates (
+ ID  Integer Not Null Primary key autoincrement,
+Name varchar(255) Not Null Unique,
+Age Integer,
+Gender varchar(255),
+Points Integer,
+Graduation date
+
+)
+
+Creating Table
+-------------------------------------------------------------------
+1.
+INSERT INTO graduates (Name,Age,Gender,Points) VALUES ((SELECT Name FROM students where Name = "Layal"),(SELECT Age FROM students where Name = "Layal"),(SELECT Gender FROM students where Name = "Layal"),(SELECT Points FROM students where Name = "Layal"))
+
+----------------------------------------------------------------
+2.
+UPDATE graduates SET Graduation = "16-1-2020" WHERE Name = "Layal"
+------------------------------------------------------------------
+3.
+DELETE FROM students
+WHERE Name like 'Layal';
+------------------------------------------------------------------
+
+
+
+
 
 

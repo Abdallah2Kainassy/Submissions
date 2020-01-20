@@ -55,3 +55,20 @@ select employees.Company from employees INNER Join companies on employees.Compan
 where Role='Graphic Designer'
 ----------------------------------------------------------------------
 
+Count & Filter
+----------------------------------------------------------------------
+1.
+SELECT Name FROM students ORDER by Points DESC LIMIT 1
+---------------------------------------------------------------------
+2.
+ SELECT AVG(Points) From students
+----------------------------------------------------------------------
+3.
+SELECT count(Name) FROM students  WHERE Points = 500
+--------------------------------------------------------------------
+4.
+SELECT Name FROM students WHERE Name like'%s%' 
+--------------------------------------------------------------------
+5.
+SELECT Name FROM students ORDER by Points DESC
+

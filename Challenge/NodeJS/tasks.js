@@ -89,7 +89,9 @@ function quit() {
  * @returns {void}
  */
 function help() {
-  console.log("hello,quit ,exit");
+  console.log(
+    "hello    it returns hello!\n,hello .....  it returns hello .....\n ,quit  it quits the app\n,exit it exits the app"
+  );
 }
 
 // The following line starts the application

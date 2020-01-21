@@ -32,6 +32,7 @@ function startApp(name) {
  * @returns {void}
  */
 function onDataReceived(text) {
+  const list = ["quit", "exit", "hello", "help"];
   if (text === "quit\n") {
     quit();
   } else if (text === "exit\n") {
@@ -62,7 +63,6 @@ function unknownCommand(c) {
  * @returns {void}
  */
 function hello(text) {
-  let text = text.trim();
   if (text == "hello") {
     console.log("hello!");
   } else {

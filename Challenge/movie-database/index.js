@@ -4,6 +4,14 @@ let date_ob = new Date();
 let hours = date_ob.getHours();
 let minutes = date_ob.getMinutes();
 let time = hours + ":" + minutes;
+
+const movies = [
+  { title: "Jaws", year: 1975, rating: 8 },
+  { title: "Avatar", year: 2009, rating: 7.8 },
+  { title: "Brazil", year: 1985, rating: 8 },
+  { title: "الإرهاب والكباب‎", year: 1992, rating: 6.2 }
+];
+
 server.get("/test", (req, res) => {
   res.json({
     status: 200,
@@ -37,6 +45,34 @@ server.get("/search", (req, res) => {
       error: true
     });
   }
+});
+
+server.get("/movies/create", (req, res) => {
+  res.json({
+    status: 200,
+    message: "hello , " + id
+  });
+});
+
+server.get("/movies/read", (req, res) => {
+  res.json({
+    status: 200,
+    message: movies
+  });
+});
+
+server.get("/movies/update", (req, res) => {
+  res.json({
+    status: 200,
+    message: "hello , " + id
+  });
+});
+
+server.get("/movies/delete", (req, res) => {
+  res.json({
+    status: 200,
+    message: "hello"
+  });
 });
 
 server.listen(3000, "127.0.0.1", () => {

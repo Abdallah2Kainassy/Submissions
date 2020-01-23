@@ -16,6 +16,28 @@ server.get("/time", (req, res) => {
     message: time
   });
 });
+server.get("/hello/:id", (req, res) => {
+  let id = req.params.id;
+  res.json({
+    status: 200,
+    message: "hello , " + id
+  });
+});
+server.get("/search", (req, res) => {
+  if (req.query.s) {
+    res.json({
+      status: 200,
+      message: "OK",
+      data: req.query.s
+    });
+  } else {
+    res.json({
+      status: 500,
+      message: "you have to provide a search",
+      error: true
+    });
+  }
+});
 
 server.listen(3000, "127.0.0.1", () => {
   console.log("server running .......");

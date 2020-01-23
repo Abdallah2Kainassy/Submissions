@@ -60,6 +60,29 @@ server.get("/movies/read", (req, res) => {
     message: movies
   });
 });
+server.get("/movies/read/by-date", (req, res) => {
+  res.json({
+    status: 200,
+    message: movies.sort((a, b) => {
+      return a.year - b.year;
+    })
+  });
+});
+server.get("/movies/read/by-rating", (req, res) => {
+  res.json({
+    status: 200,
+    message: movies.sort((a, b) => {
+      return b.rating - a.rating;
+    })
+  });
+});
+
+server.get("/movies/read/by-title", (req, res) => {
+  res.json({
+    status: 200,
+    message: movies.sort()
+  });
+});
 
 server.get("/movies/update", (req, res) => {
   res.json({

@@ -1,74 +1,50 @@
-1.select  name from students;
-2.select  * from students where age>30 ;
-3.select  name from students where age>30 and gender='F';
-4.select points from students where ID=1;
-5.INSERT INTO students ( Name, Age,Gender,Points)
-VALUES ( 'Abdallah',30,'M', 200);
-6.UPDATE students
-SET Points=350
-WHERE ID=2;
-7.UPDATE students
-SET Points=150
-WHERE ID=1;
+"SELECT  name FROM students;"
+"SELECT  * FROM students WHERE age>30; 
+"SELECT  name FROM students WHERE age>30 and gender='F';"
+"SELECT points FROM students WHERE ID=1;"
+"INSERT INTO students ( Name, Age,Gender,Points)VALUES ( 'Abdallah',30,'M', 200);"
+"UPDATE students SET Points=350 WHERE ID=2;"
+"UPDATE students SET Points=150 WHERE ID=1;"
+"create table graduates ( 
+ID  INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT,
+Name VARCHAR(255) NOT NULL UNIQUE,
+Age INTEGER,
+Gender VARCHAR(255),
+Points INTEGER,
+Graduation DATE
 
-------------------------------------------------------------------
-create table graduates (
- ID  Integer Not Null Primary key autoincrement,
-Name varchar(255) Not Null Unique,
-Age Integer,
-Gender varchar(255),
-Points Integer,
-Graduation date
+);"
 
-)
 
-Creating Table
--------------------------------------------------------------------
-1.
-INSERT INTO graduates (Name,Age,Gender,Points) VALUES ((SELECT Name FROM students where Name = "Layal"),(SELECT Age FROM students where Name = "Layal"),(SELECT Gender FROM students where Name = "Layal"),(SELECT Points FROM students where Name = "Layal"))
+"INSERT INTO graduates (Name,Age,Gender,Points) VALUES (
+    (SELECT Name FROM students WHERE Name = "Layal"),
+    (SELECT Age FROM students WHERE Name = "Layal"),
+    (SELECT Gender FROM students WHERE Name = "Layal"),
+    (SELECT Points FROM students WHERE Name = "Layal"));"
 
-----------------------------------------------------------------
-2.
-UPDATE graduates SET Graduation = "16-1-2020" WHERE Name = "Layal"
-------------------------------------------------------------------
-3.
-DELETE FROM students
-WHERE Name like 'Layal';
-------------------------------------------------------------------
+
+"UPDATE graduates SET Graduation = "16-1-2020" WHERE Name = "Layal";"
+
+"DELETE FROM students WHERE Name LIKE 'Layal';""
 
 
 
 
 
-Joins
-------------------------------------------------------------------
-1.
-select employees.Name,employees.Company,companies.Date from employees INNER Join companies on employees.Company = companies.Name
+"SELECT employees.Name,employees.Company,companies.Date FROM employees INNER JOIN companies ON employees.Company = companies.Name;"
 
-------------------------------------------------------------------
-2.
-select employees.Name from employees INNER Join companies on employees.Company = companies.Name 
-where companies.Date <2000
---------------------------------------------------------------------
-3.
-select employees.Company from employees INNER Join companies on employees.Company = companies.Name 
-where Role='Graphic Designer'
-----------------------------------------------------------------------
 
-Count & Filter
-----------------------------------------------------------------------
-1.
-SELECT Name FROM students ORDER by Points DESC LIMIT 1
----------------------------------------------------------------------
-2.
- SELECT AVG(Points) From students
-----------------------------------------------------------------------
-3.
-SELECT count(Name) FROM students  WHERE Points = 500
---------------------------------------------------------------------
-4.
-SELECT Name FROM students WHERE Name like'%s%' 
---------------------------------------------------------------------
-5.
-SELECT Name FROM students ORDER by Points DESC
+"SELECT employees.Name FROM employees INNER JOIN companies ON employees.Company = companies.Name WHERE companies.Date <2000;"
+
+" SELECT employees.Company FROM employees INNER JOIN companies ON employees.Company = companies.Name  WHERE Role='Graphic Designer';"
+
+" SELECT Name FROM students ORDER BY Points DESC LIMIT 1;"
+
+" SELECT AVG(Points) From students;"
+
+"SELECT count(Name) FROM students  WHERE Points = 500;"
+
+"SELECT Name FROM students WHERE Name LIKE'%s%' ;"
+
+"SELECT Name FROM students ORDER BY Points DESC;"
 

@@ -1,9 +1,8 @@
 const express = require("express");
-const dev = express();
-const PORT = 3000;
-dev.get("url", (req, res) => {
-  res.send("OK");
+const http = require("http");
+const server = http.createServer((req, res) => {
+  res.end("OK");
 });
-dev.listen(PORT, () => {
-  console.log(`OK`);
+server.listen(3000, "127.0.0.1", () => {
+  console.log("server running .......");
 });

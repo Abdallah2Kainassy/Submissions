@@ -57,13 +57,13 @@ server.get("/movies/create", (req, res) => {
 server.get("/movies/read", (req, res) => {
   res.json({
     status: 200,
-    message: movies
+    data: movies
   });
 });
 server.get("/movies/read/by-date", (req, res) => {
   res.json({
     status: 200,
-    message: movies.sort((a, b) => {
+    data: movies.sort((a, b) => {
       return a.year - b.year;
     })
   });
@@ -71,7 +71,7 @@ server.get("/movies/read/by-date", (req, res) => {
 server.get("/movies/read/by-rating", (req, res) => {
   res.json({
     status: 200,
-    message: movies.sort((a, b) => {
+    data: movies.sort((a, b) => {
       return b.rating - a.rating;
     })
   });
@@ -80,8 +80,24 @@ server.get("/movies/read/by-rating", (req, res) => {
 server.get("/movies/read/by-title", (req, res) => {
   res.json({
     status: 200,
-    message: movies.sort()
+    data: movies.sort()
   });
+});
+
+server.get("/movies/read/id/:id", (req, res) => {
+  let index = parseInt(req.params.id);
+  if (index < movies.length) {
+    res.json({
+      status: 200,
+      data: movies[index]
+    });
+  } else {
+    res.json({
+      status: 404,
+      error: true,
+      message: "the movie +" + index + " does not exist"
+    });
+  }
 });
 
 server.get("/movies/update", (req, res) => {
